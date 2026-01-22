@@ -22,7 +22,7 @@ const ServicesPage = () => {
       <div class="shape-container">
         <img src={shape} alt="Background Shape" className="shape-image" />
       </div>
-      <div className="services-title-page">Nasze usługi</div>
+      <div className="services-title-page">Os nossos serviços</div>
       <div className="services-grid">
         {services.map((service) => (
           <div className="servicepage-card" key={service.id}>
@@ -35,7 +35,7 @@ const ServicesPage = () => {
               <h3>{service.name}</h3>
               <p className="service-description">{service.short_description}</p>
               <div className="learn-more-btn">
-                <Link to={`/services/${service.id}`}>Dowiedz się więcej</Link>
+                <Link to={`/services/${service.id}`}>Saber mais</Link>
               </div>
             </div>
           </div>

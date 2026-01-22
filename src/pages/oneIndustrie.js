@@ -23,14 +23,14 @@ const OneIndustriePage = () => {
     fetchIndustry();
   }, [id]);
 
-  if (!industry) return <div>Załadunek...</div>;
+  if (!industry) return <div>Carregando...</div>;
 
   return (
     <div className="one-service-page">
-      <div className="breadcrumb">Branże - {industry.name}</div>
+      <div className="breadcrumb">Indústrias - {industry.name}</div>
 
       <button className="back-button" onClick={() => navigate(-1)}>
-        ← Powrót
+        ← Retornar
       </button>
 
       <div className="service-header">
@@ -45,7 +45,7 @@ const OneIndustriePage = () => {
               onClick={() => setShowQuoteForm(!showQuoteForm)}
               className="quote-button"
             >
-              Uzyskaj wycenę
+              Solicite um orçamento
             </button>
           </div>
         </div>

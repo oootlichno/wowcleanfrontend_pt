@@ -36,14 +36,14 @@ const OneArticlePage = () => {
 
      {/* Path (Breadcrumbs) */}
      <nav className="breadcrumbs">
-      <span>Artykuły</span> &nbsp;—&nbsp;
-      <span>Najnowsze artykuły</span> &nbsp;—&nbsp;
+      <span>Artigos</span> &nbsp;—&nbsp;
+      <span>Últimos artigos</span> &nbsp;—&nbsp;
       <span>{article.title}</span>
     </nav>
     
     {/* Back Button */}
     <Link to="/articles" className="back-link">
-      ← Z powrotem
+      ← Voltar
     </Link>
   </div>
   {/* Title */}
@@ -54,10 +54,10 @@ const OneArticlePage = () => {
   {/* Article Main Content */}
   <div className="article-main">
   <p className="article-meta">
-  Opublikowano dnia{" "}
-  {new Date(article.published_date).toLocaleDateString("pl-PL", {
+  Publicado em{" "}
+  {new Date(article.published_date).toLocaleDateString("pt-PT", {
     day: "2-digit",
-    month: "long", // Month name in full (e.g., "stycznia")
+    month: "long", // Month name in full
     year: "numeric",
   })}
 </p>
@@ -69,7 +69,7 @@ const OneArticlePage = () => {
 
   {/* Latest Articles */}
   <aside className="latest-articles">
-  <h2 className="latest-articles-title">Najnowsze posty</h2>
+  <h2 className="latest-articles-title">Últimas publicações</h2>
   <ul className="latest-articles-list">
     {latestArticles.map((latest) => (
       <li key={latest.id} className="latest-article-item">
@@ -85,8 +85,8 @@ const OneArticlePage = () => {
 </div>
           <div className="latest-article-info">
           <p className="article-meta">
-  Opublikowano dnia{" "}
-  {new Date(article.published_date).toLocaleDateString("pl-PL", {
+  Publicado em{" "}
+  {new Date(article.published_date).toLocaleDateString("pt-PT", {
     day: "2-digit",
     month: "2-digit",
     year: "numeric",
@@ -98,7 +98,7 @@ const OneArticlePage = () => {
           className="latest-article-read-more"
           aria-label={`Przeczytaj więcej o ${latest.title}`}
         >
-          Przeczytaj więcej →
+          Leia mais →
         </Link>
           </div>
         </Link>
@@ -111,7 +111,7 @@ const OneArticlePage = () => {
 
 {/* Share to Socials */}
 <div className="share-socials">
-  <div className="share-label">Podziel się z:</div>
+  <div className="share-label">Partilhe com:</div>
   <div className="share-item facebook">
     <a
       href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
@@ -119,7 +119,7 @@ const OneArticlePage = () => {
       rel="noopener noreferrer"
       className="social-link"
     >
-      <i className="fab fa-facebook"></i> UDZIAŁ
+      <i className="fab fa-facebook"></i> PARTICIPAÇÃO
     </a>
   </div>
   <div className="share-item instagram">
@@ -129,7 +129,7 @@ const OneArticlePage = () => {
       rel="noopener noreferrer"
       className="social-link"
     >
-      <i className="fab fa-instagram"></i> UDZIAŁ
+      <i className="fab fa-instagram"></i> PARTICIPAÇÃO
     </a>
   </div>
   <div className="share-item linkedin">
@@ -139,7 +139,7 @@ const OneArticlePage = () => {
       rel="noopener noreferrer"
       className="social-link"
     >
-      <i className="fab fa-linkedin"></i> UDZIAŁ
+      <i className="fab fa-linkedin"></i> PARTICIPAÇÃO
     </a>
   </div>
 </div>

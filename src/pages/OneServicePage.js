@@ -22,16 +22,16 @@ const OneServicePage = () => {
     fetchService();
   }, [id]);
 
-  if (!service) return <div>Loading...</div>;
+  if (!service) return <div>Carregando...</div>;
 
 
 return (
   <div className="one-service-page">
     <div className="breadcrumb">
-    Usługi - {service.name}
+    Serviços - {service.name}
     </div>
     <button className="back-button" onClick={() => navigate(-1)}>
-    ← Powrót
+    ← Retornar
     </button>
     <div className="service-header">
       <div className="service-image">
@@ -45,7 +45,7 @@ return (
             onClick={() => setShowQuoteForm(!showQuoteForm)}
             className="quote-button"
           >
-            Uzyskaj wycenę
+            Solicite um orçamento
           </button>
         </div>
       </div>
