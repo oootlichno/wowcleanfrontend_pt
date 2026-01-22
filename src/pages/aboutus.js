@@ -23,15 +23,15 @@ const AboutUs = () => {
   {/* About Header */}
   <div className="about-header">
     <div className="about-text">
-      <h1>O nas</h1>
+      <h1>Sobre nós</h1>
       <p>
-      Witamy w WOW Clean! Dzięki wieloletniemu doświadczeniu jesteśmy dumni z oferowania najwyższej jakości usług sprzątania toaletów. Nasz oddany zespół dba o to, aby Twoja przestrzeń była nieskazitelnie czysta, wykorzystując przyjazne dla środowiska produkty i zaawansowane techniki. Zobowiązujemy się do zapewniania wyjątkowej obsługi klienta, dostosowanej do Twoich unikalnych potrzeb. Pozwól nam zająć się sprzątaniem twego WC, bo pierwsze wrazenie twoich klijentow ma znaczenie. Zobowiązujemy się do zapewniania wyjątkowej obsługi, dostosowanej do Twoich unikalnych potrzeb.
+      Bem-vindo à WOW Clean! Com anos de experiência, orgulhamo-nos de oferecer serviços de limpeza de casas de banho da mais alta qualidade. A nossa equipa dedicada garante que o seu espaço fica impecavelmente limpo, utilizando produtos ecológicos e técnicas avançadas. Estamos empenhados em prestar um atendimento excecional, personalizado para atender às suas necessidades específicas. Deixe-nos tratar da limpeza da sua casa de banho, porque a primeira impressão é a que fica. Estamos empenhados em prestar um serviço excepcional, personalizado para atender às suas necessidades específicas.
       </p>
       
       {/* Centered Button */}
       <div className="about-button">
         <button className="about-quote-button" onClick={handleGetQuoteClick}>
-        Uzyskaj wycenę
+        Solicite um orçamento
         </button>
       </div>
     </div>

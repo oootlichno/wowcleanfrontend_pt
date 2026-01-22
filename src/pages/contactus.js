@@ -15,28 +15,28 @@ const ContactUs = () => {
 
   {/* Contact Information Section */}
   <div className="contact-info-section">
-    <div className="contacts-title">Nasze dane kontaktowe</div>
+    <div className="contacts-title">Os nossos dados de contato</div>
     <div className="contacts-container">
       <div className="contact-info-grid">
         <div className="contact-card">
           <img src={office_image} alt="Office Icon" className="contacts-icon" />
           <div className="contact-card-text">
-          <h2>Adres biura:</h2>
-          <p>Puławska 233, 02-715 Warsaw, Poland</p>
+          <h2>Endereço do escritório:</h2>
+          <p>Coimbra, Portugal</p>
           </div>
         </div>
         <div className="contact-card">
           <img src={email_image} alt="Email Icon" className="contacts-icon" />
           <div className="contact-card-text">
-          <h2>Email:</h2>
-          <p>help@wowclean.pl</p>
+          <h2>E-mail:</h2>
+          <p>help@wowcleanpt.com</p>
         </div>
         </div>
         <div className="contact-card">
           <img src={phone_image} alt="Phone Icon" className="contacts-icon" />
           <div className="contact-card-text">
-          <h2>Numer telefonu:</h2>
-          <p>Siedziba główna: +48 (734) 126-837</p>
+          <h2>Número de telefone:</h2>
+          <p>Sede: +351 (913) 474-676</p>
         </div>
         </div>
       </div>
@@ -56,9 +56,9 @@ const ContactUs = () => {
   
     {/* Contact Form Section */}
     <div className="contact-form-section">
-      <h1 className="form-title">Zapraszamy do kontaktu z nami.</h1>
+      <h1 className="form-title">Sinta-se à vontade para entrar em contacto connosco.</h1>
       <p className="form-description">
-      Dziękujemy za zainteresowanie zatrudnieniem nas. Rozważamy komunikację z klientem.
+      Agradecemos o seu interesse em contratar os nossos serviços. Aguardamos o seu contacto.
       </p>
       <ContactForm />
     </div>

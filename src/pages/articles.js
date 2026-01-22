@@ -37,10 +37,9 @@ const Articles = () => {
       <ArticlesCarousel articles={articles} />
 
       {/* All Articles Section */}
-      <div className="services-title-page">Wszystkie artykuły</div>
+      <div className="services-title-page">Todos os artigos</div>
       <p className="article-about">
-      Świeże pomysły na czystsze życie! Poznaj trendy, wskazówki i historie od naszego
-zespołu, łączącego wiedzę specjalistyczną i inspirację, aby utrzymać Twoje przestrzenie w nieskazitelnej czystości.
+      Ideias inovadoras para uma vida mais organizada! Descubra tendências, dicas e histórias da nossa equipa, que combinam conhecimento e inspiração para manter os seus espaços impecáveis.
       </p>
       <div className="recent-articles-grid">
         {articles.slice(0, visibleArticles).map((article) => (
@@ -74,7 +73,7 @@ zespołu, łączącego wiedzę specjalistyczną i inspirację, aby utrzymać Two
                 className="read-more"
                 aria-label={`Read more about ${article.title}`}
               >
-                Przeczytaj więcej →
+                Ler mais →
               </Link>
             </div>
           </article>
@@ -85,7 +84,7 @@ zespołu, łączącego wiedzę specjalistyczną i inspirację, aby utrzymać Two
       {/* articles.length > 0 */ visibleArticles < articles.length && (
         <div className="view-all-container">
           <button className="view-all-btn" onClick={handleViewAll}>
-          Zobacz wszystko →
+          Ver tudo →
           </button>
         </div>
       )}

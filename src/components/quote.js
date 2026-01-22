@@ -94,16 +94,16 @@ const QuoteForm = () => {
 
   return (
     <div className="quote">
-  <h2 id="quote-form-section" className="services-title-quote">Poproś o wycenę</h2>
+  <h2 id="quote-form-section" className="services-title-quote">Solicitar um orçamento</h2>
   <div className="quote-form-container">
     <form onSubmit={handleSubmit} className="quote-form">
 
      {/* Row 1 */}
      <div className="main-form-row">
-     <div className="quote-form-title">Dane kontaktowe</div>
+     <div className="quote-form-title">Informações de contacto</div>
     <div className="form-row">
       <div className="form-column">
-        <label htmlFor="company_name">Nazwa firmy</label>
+        <label htmlFor="company_name">Nome da empresa</label>
         <input
           type="text"
           id="company_name"
@@ -114,7 +114,7 @@ const QuoteForm = () => {
         />
       </div>
       <div className="form-column">
-        <label htmlFor="contact_person">Osoba kontaktowa *</label>
+        <label htmlFor="contact_person">Contacto pessoal *</label>
         <input
           type="text"
           id="contact_person"
@@ -129,7 +129,7 @@ const QuoteForm = () => {
        {/* Row 2 */}
     <div className="form-row">
       <div className="form-column">
-        <label htmlFor="phone">Telefon *</label>
+        <label htmlFor="phone">Telefone *</label>
         <input
           type="tel"
           id="phone"
@@ -154,10 +154,10 @@ const QuoteForm = () => {
       
     {/* Row 3 */}
     <div className="main-form-row">
-    <div className="quote-form-title">Dane dotyczące lokalizacji</div>
+    <div className="quote-form-title">Localização</div>
     <div className="form-row">
     <div className="form-column">
-          <label htmlFor="street_address">Adres ulicy *</label>
+          <label htmlFor="street_address">Endereço *</label>
           <input
             type="text"
             id="street_address"
@@ -175,7 +175,7 @@ const QuoteForm = () => {
       <div className="form-row">
         
         <div className="form-column">
-          <label htmlFor="city">Miasto *</label>
+          <label htmlFor="city">Cidade *</label>
           <input
             type="text"
             id="city"
@@ -186,7 +186,7 @@ const QuoteForm = () => {
           />
         </div>
         <div className="form-column">
-          <label htmlFor="state">Województwo</label>
+          <label htmlFor="state">Distrito</label>
           <input
             type="text"
             id="state"
@@ -200,7 +200,7 @@ const QuoteForm = () => {
           {/* Row 4 */}
       <div className="form-row">
         <div className="form-column">
-          <label htmlFor="zip">Kod pocztowy *</label>
+          <label htmlFor="zip">CEP *</label>
           <input
             type="text"
             id="zip"
@@ -211,7 +211,7 @@ const QuoteForm = () => {
           />
         </div>
         <div className="form-column">
-          <label htmlFor="country">Kraj *</label>
+          <label htmlFor="country">País *</label>
           <input
             type="text"
             id="country"
@@ -226,11 +226,11 @@ const QuoteForm = () => {
 
        {/* Row 5 */}
        <div className="main-form-row">
-       <div className="quote-form-title">Dane dotyczące zamówienia</div>
+       <div className="quote-form-title">Informações do pedido</div>
       <div className="form-row">
         <div className="form-column">
           <label htmlFor="cleaning_frequency">
-          Sesje sprzątania w tygodniu *
+          Número de sessões de limpeza por semana  *
           </label>
           <select
             id="cleaning_frequency"
@@ -241,13 +241,13 @@ const QuoteForm = () => {
           >
             {[...Array(7)].map((_, i) => (
               <option key={i + 1} value={i + 1}>
-                {i + 1} {i === 0 ? "raz" : "razy"}
+                {i + 1} {i === 0 ? "vez" : "vezes"}
               </option>
             ))}
           </select>
         </div>
         <div className="form-column">
-          <label htmlFor="wc">Ilość WC *</label>
+          <label htmlFor="wc">Número de casas de banho  *</label>
           <input
             type="number"
             id="wc"
@@ -261,7 +261,7 @@ const QuoteForm = () => {
           />
         </div>
         <div className="form-column">
-          <label htmlFor="toilet">Ilość toalet *</label>
+          <label htmlFor="toilet">Número de casas de banho  *</label>
           <input
             type="number"
             id="toilet"
@@ -277,7 +277,7 @@ const QuoteForm = () => {
       </div>
       </div>      
 <div className="quote-button-container">
-  <button type="submit" className="quote-button-form">Wyślij</button>
+  <button type="submit" className="quote-button-form">Enviar</button>
 </div>
     </form>
   </div>
