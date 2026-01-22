@@ -11,18 +11,16 @@ const Banner = () => {
       <div className="banner">
         <div className="banner-text">
           <h1>WOWCLEAN</h1>
-{/*           <h2>One Toilet at a Time</h2>
+{/*           <h2>A falta de higiene prejudica a sua reputação. Tal como uma doença, uma má reputação espalha-se se não for combatida logo na sua origem.</h2>
  */}          <p>
-          Brak higieny brudzi Twoją reputację. Podobnie jak choroba, brudna reputacja będzie się rozprzestrzeniać, dopóki nie zostanie zwalczona u źródła.
-
-W przeciwieństwie do większości usług sprzątania, które rzadko wykraczają poza czyszczenie powierzchni, nasz program sanityzacji toalet WowClean dociera do miejsc, których nie widać — gdzie rozwijają się i rozmnażają chorobotwórcze zarazki i bakterie. Zajmujemy się tym nagromadzeniem u źródła, a następnie zapewniemy że problem nie powróci.
-
-Z dumą oferujemy różnorodne, niedrogie usługi sprzątania komercyjnego toalet każdej branży.
+          Ao contrário da maioria dos serviços de limpeza, que raramente vão além da limpeza superficial, o nosso programa de higienização de casas de banho WowClean chega aos locais invisíveis — onde os germes e as bactérias causadoras de doenças prosperam e se multiplicam. Combatemos essa acumulação logo na sua origem e garantimos que nunca mais regressa.
+ 
+Oferecemos com orgulho uma variedade de serviços de limpeza comercial de casas de banho acessíveis para todos os setores.
 
           </p>
           <div className="banner-button">
             <a href="#quote-form-section" className="quote-button">
-            Uzyskaj wycenę
+            Solicite um orçamento
             </a>
           </div>
         </div>

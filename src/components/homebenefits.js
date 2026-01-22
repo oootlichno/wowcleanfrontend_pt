@@ -7,27 +7,27 @@ const OurBenefits = () => {
   const benefits = [
     {
       icon: bactreria,
-      title: "Lepsza higiena i dezynfekcja",
+      title: "Higiene e desinfeção melhoradas",
       description:
-        "Profesjonalni sprzątacze stosują zaawansowane techniki i produkty do dezynfekcji toalet, redukując liczbę zarazków i promując zdrowsze środowisko.",
+        "Os profissionais de limpeza utilizam técnicas e produtos avançados para desinfetar as casas de banho, reduzindo os germes e promovendo um ambiente mais saudável.",
     },
     {
       icon: clock,
-      title: "Oszczędność czasu i wysiłku",
+      title: "Poupe tempo e esforço",
       description:
-        "Dzięki zleceniu czyszczenia toalet na zewnątrz zyskujesz czas i energię, które możesz poświęcić na ważniejsze zadania lub priorytety osobiste, podczas gdy eksperci sprawnie zajmą się czyszczeniem. Zajmiemy się całą brudną robotą.",
+        "Ao externalizar a limpeza da sua casa de banho, ganha tempo e energia para se concentrar em tarefas mais importantes ou prioridades pessoais, enquanto os nossos especialistas tratam da limpeza de forma eficiente. Deixe para nós todo o trabalho sujo.",
     },
     {
       icon: vector,
-      title: "Spójne i wysokiej jakości rezultaty",
+      title: "Resultados consistentes e de elevada qualidade",
       description:
-        "Profesjonalni sprzątacze są przeszkoleni w zakresie utrzymywania wysokich standardów, zapewniając nieskazitelnie czyste i pozbawione zapachów WC, co poprawia ogólne wrażenia użytkownika.",
+        "Os profissionais de limpeza são treinados para manter elevados padrões de qualidade, garantindo que a sua casa de banho está impecavelmente limpa e livre de odores, melhorando a sua experiência global.",
     },
   ];
 
   return (
     <section className="our-benefits">
-      <h2 className="benefits-title">Nasze korzyści</h2>
+      <h2 className="benefits-title">Os nossos benefícios</h2>
       <div className="benefits-container">
         {benefits.map((benefit, index) => (
           <div key={index} className="benefit-card">

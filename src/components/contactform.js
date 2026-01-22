@@ -24,11 +24,11 @@ const ContactForm = () => {
 
     try {
       await axios.post(`${backendURL}/api/messages`, formData);
-      setStatus('Message sent successfully!');
+      setStatus('Mensagem enviada com sucesso!');
       setFormData({ first_name: '', last_name: '', email: '', phone: '', message: '' });
     } catch (error) {
       console.error(error);
-      setStatus('Failed to send the message. Please try again.');
+      setStatus('Falha ao enviar a mensagem. Tente novamente.');
     }
   };
 
@@ -36,49 +36,49 @@ const ContactForm = () => {
     <form onSubmit={handleSubmit} className="contact-form">
       <div className='contact-form-sections'>
       <div className='contact-form-column'>
-      <label htmlFor="contact-form-label">Imię</label>
+      <label htmlFor="contact-form-label">Nome</label>
       <input
         type="text"
         name="first_name"
         value={formData.first_name}
         onChange={handleChange}
-        placeholder="Imię"
+        placeholder="Nome"
         required
       />
       </div>
       <div className='contact-form-column'>
-      <label htmlFor="contact-form-label">Nazwisko</label>
+      <label htmlFor="contact-form-label">Sobrenome</label>
       <input
         type="text"
         name="last_name"
         value={formData.last_name}
         onChange={handleChange}
-        placeholder="Nazwisko"
+        placeholder="Sobrenome"
         required
       />
       </div>
       </div>
       <div className='contact-form-sections'>
       <div className='contact-form-column'>
-      <label htmlFor="contact-form-label">Email</label>
+      <label htmlFor="contact-form-label">E-mail</label>
       <input
         type="email"
         name="email"
         value={formData.email}
         onChange={handleChange}
-        placeholder="Adres e-mail"
+        placeholder="E-mail"
         required
       />
       </div>
 
       <div className='contact-form-column'>
-      <label htmlFor="contact-form-label">Numer telefonu</label>
+      <label htmlFor="contact-form-label">Telefone</label>
       <input
         type="text"
         name="phone"
         value={formData.phone}
         onChange={handleChange}
-        placeholder="Numer telefonu"
+        placeholder="Telefone"
         required
       />
       </div>
@@ -86,19 +86,19 @@ const ContactForm = () => {
 
       <div className='contact-form-sections'>
   <div className='contact-form-column full-width'>
-    <label htmlFor="contact-form-label">Wiadomość</label>
+    <label htmlFor="contact-form-label">Mensagem</label>
     <textarea
       name="message"
       value={formData.message}
       onChange={handleChange}
-      placeholder="Wpisz tutaj swoją wiadomość"
+      placeholder="Introduza aqui a sua mensagem"
       required
     ></textarea>
   </div>
 </div>
 
       <div className="quote-button-container">
-      <button type="submit" className="quote-button-form">Wyślij wiadomość</button>
+      <button type="submit" className="quote-button-form">Enviar mensagem</button>
       {status && <p className="form-status">{status}</p>}
 </div>
 

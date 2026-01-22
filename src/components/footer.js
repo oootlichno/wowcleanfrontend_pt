@@ -20,29 +20,29 @@ const Footer = () => {
         <div className="footer-column footer-nav">
           <ul>
             <li>
-              <Link to="/aboutus">O nas</Link>
+              <Link to="/aboutus">Sobre nós</Link>
             </li>
             <li>
-              <Link to="/services">Usługi</Link>
+              <Link to="/services">Serviços</Link>
             </li>
             <li>
-              <Link to="/industries">Branże</Link>
+              <Link to="/industries">Indústrias</Link>
             </li>
             <li>
-              <Link to="/products">Produkty</Link>
+              <Link to="/products">Produtos</Link>
             </li>
             <li>
-              <Link to="/articles">Artykuły</Link>
+              <Link to="/articles">Artigos</Link>
             </li>
             <li>
-              <Link to="/contacts">Kontakt</Link>
+              <Link to="/contacts">Contacto</Link>
             </li>
             <div className="contact-container">
   <div className="contact-item">
-    <Contact phone="+48 (734) 126-837" />
+    <Contact phone="+351 (913) 474-676" />
   </div>
   <div className="contact-item">
-    <Email email="help@wowclean.pl" />
+    <Email email="help@wowcleanpt.com" />
   </div>
 </div>
           </ul>
@@ -54,11 +54,11 @@ const Footer = () => {
       <div className="footer-bottom">
         <div className="Policy">
           <p>
-            &copy; {currentYear} WOWClean by CPG. Wszelkie prawa zastrzeżone. Kliknij na {" "}
+            &copy; {currentYear} WOWClean da CPG. Todos os direitos reservados. Clique aqui {" "}
             <Link to="/privacy-policy" style={{ color: "#fff" }}>
-            Polityka prywatności
+            política de Privacidade
             </Link>{" "}
-            aby przeczytać więcej.
+            para ler mais.
           </p>
         </div>
         <div className="footer-social">

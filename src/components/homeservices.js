@@ -27,7 +27,7 @@ const Homeservices = () => {
   return (
     <div className="home-services">
       <div className="services-title-container">
-        <h2 className="services-title">Nasze usługi</h2>
+        <h2 className="services-title">Os nossos serviços</h2>
         <div className="services-title-line"></div>
       </div>
       <div className="services-container">
@@ -47,7 +47,7 @@ const Homeservices = () => {
               <h3>{service.name}</h3>
               <p className="service-description">
                 {service.short_description}
-                <span className="readmore"> Przeczytaj więcej →</span>
+                <span className="readmore"> Leia mais →</span>
               </p>
             </div>
           </div>
