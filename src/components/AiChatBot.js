@@ -60,7 +60,7 @@ function AiChatBot() {
       if (!initialGreeted && messages.length === 0) {
         setMessages(prev => [...prev, {
           sender: "ai",
-          text: "Cześć! W czym mogę Ci pomóc?"
+          text: "Olá! Como te posso ajudar?"
         }]);
         setIsOpen(true);
         setInitialGreeted(true);
@@ -84,7 +84,7 @@ function AiChatBot() {
         <div className="chatbot-container">
           <div className="chat-header">
             <img src={ai_assistant} alt="Anna" className="header-avatar" />
-            Anna — Asystent AI
+            Anna — Assistente de IA
             <button className="chat-close-btn" onClick={() => setIsOpen(false)}>×</button>
           </div>
           <div className="chat-messages">
@@ -107,9 +107,9 @@ function AiChatBot() {
               type="text"
               value={input}
               onChange={(e) => setInput(e.target.value)}
-              placeholder="Wpisz wiadomość..."
+              placeholder="Introduza a sua mensagem..."
             />
-            <button onClick={sendMessage}>Wyślij</button>
+            <button onClick={sendMessage}>Enviar</button>
           </div>
         </div>
       )}
