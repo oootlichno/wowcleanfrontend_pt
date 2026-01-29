@@ -39,7 +39,7 @@ const OneIndustriePage = () => {
         </div>
         <div className="service-text">
           <h1>{industry.name}</h1>
-          <p>{industry.description}</p>
+          <p style={{ whiteSpace: "pre-line" }}>{industry.description}</p>
           <div className="banner-button">
             <button
               onClick={() => setShowQuoteForm(!showQuoteForm)}

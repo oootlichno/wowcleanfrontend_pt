@@ -40,7 +40,6 @@ const OneServicePage = () => {
         <div className="service-text">
           <h1>{service.name}</h1>
 
-          {/* ✅ Only change: preserve line breaks from admin text */}
           <p style={{ whiteSpace: "pre-line" }}>{service.description}</p>
 
           <div className="banner-button">
