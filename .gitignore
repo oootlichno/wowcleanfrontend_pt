@@ -10,10 +10,17 @@ node_modules/.cache/
 build/
 dist/
 
-# env files
-.env*
+# env files (do not commit secrets)
+.env
 .env.local
+.env.development
+.env.test
 .env.production
+.env.*.local
+
+# allow env examples
+!.env.example
+!.env.sample
 
 # logs
 *.log
