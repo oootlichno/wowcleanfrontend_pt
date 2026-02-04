@@ -28,7 +28,7 @@ function AiChatBot() {
       setMessages(prev => [...prev, { sender: "ai", text: response.data.message }]);
     } catch (error) {
       console.error("Error sending message:", error);
-      setMessages(prev => [...prev, { sender: "ai", text: "Błąd połączenia z AI" }]);
+      setMessages(prev => [...prev, { sender: "ai", text: "Erro de ligação com IA" }]);
     }
   };
 

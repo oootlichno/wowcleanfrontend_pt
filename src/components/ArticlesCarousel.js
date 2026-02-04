@@ -51,7 +51,7 @@ const ArticlesCarousel = ({ articles }) => {
          
               <div className="carousel-articles-title">{article.title}</div>
               <Link to={`/articles/${article.id}`} className="read-more">
-              Przeczytaj więcej →
+              Ler mais →
               </Link>
             </div>
           </div>
