@@ -120,7 +120,7 @@ const PrivacyPolicy = () => {
         <p>
           Email: <a href="mailto:help@wowcleanpt.com">help@wowcleanpt.com</a>
         </p>
-        <p>Número de telefone: +351 (913) 474-676</p>
+        <p>Número de telefone: +351 (938) 282-428</p>
         <p>Coimbra, Portugal</p>
       </div>
     </div>

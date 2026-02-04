@@ -36,7 +36,7 @@ const ContactUs = () => {
           <img src={phone_image} alt="Phone Icon" className="contacts-icon" />
           <div className="contact-card-text">
           <h2>Número de telefone:</h2>
-          <p>Sede: +351 (913) 474-676</p>
+          <p>Sede: +351 (938) 282-428</p>
         </div>
         </div>
       </div>
