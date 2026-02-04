@@ -33,7 +33,7 @@ const ProductsPage = () => {
             <h3 className="product-name">{product.name}</h3>
             <p className="product-description">{product.description}</p>
             <div className="product-price-container">
-              <p className="product-price">${product.price.toFixed(2)}</p>
+              <p className="product-price">€{product.price.toFixed(2)}</p>
             </div>
           </div>
         ))}
