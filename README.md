@@ -29,6 +29,21 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run deploy`
+
+Builds the app for production and deploys it to the AWS S3 bucket used to host the frontend.
+
+This command performs the following steps:
+
+1. Runs `npm run build` to generate an optimized production build in the `build` folder.
+2. Uploads the contents of the `build` folder to the S3 bucket `wowcleanpt-frontend`.
+3. Removes outdated files from the bucket to keep it synchronized with the latest build.
+4. Creates a CloudFront invalidation so the updated files are served immediately.
+
+After the command completes, the latest version of the application will be available through the CloudFront distribution and the `wowcleanpt.com` domain.
+
+Use this command whenever frontend changes need to be deployed to production.
+
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
