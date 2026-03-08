@@ -85,13 +85,13 @@ const Header = () => {
               >
                 Indústrias
               </Link>
-              <Link
+              {/* <Link
                 to="/products"
                 className="nav-link"
                 onClick={() => setMenuOpen(false)}
               >
                 Produtos
-              </Link>
+              </Link> */}
               <Link
                 to="/articles"
                 className="nav-link"
@@ -146,9 +146,9 @@ const Header = () => {
               ))}
             </div>
           </div>
-          <Link to="/products" className="nav-link">
+         {/* <Link to="/products" className="nav-link">
           Produtos
-          </Link>
+          </Link> */}
           <Link to="/articles" className="nav-link">
           Artigos
           </Link>
