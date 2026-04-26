@@ -22,7 +22,9 @@ const ContactUs = () => {
           <img src={office_image} alt="Office Icon" className="contacts-icon" />
           <div className="contact-card-text">
           <h2>Endereço do escritório:</h2>
-          <p>Coimbra, Portugal</p>
+          <p>Rua Antero de Quental 18 C/V</p>
+          <p>1150-043 Lisboa</p>
+          <p>Portugal</p>
           </div>
         </div>
         <div className="contact-card">
@@ -36,14 +38,14 @@ const ContactUs = () => {
           <img src={phone_image} alt="Phone Icon" className="contacts-icon" />
           <div className="contact-card-text">
           <h2>Número de telefone:</h2>
-          <p>Sede: +351 (938) 282-428</p>
+          <p>Sede: +351 (93) 828-24-28</p>
         </div>
         </div>
       </div>
       <div className="google-map">
         <iframe
           title="Google Map of Office Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2446.7658860725605!2d21.018679076793486!3d52.174949871972714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471932c384083ff5%3A0x4d3d2e58f58764ed!2sPu%C5%82awska%20233%2C%2002-715%20Warszawa%2C%20Poland!5e0!3m2!1sen!2sus!4v1736301508412!5m2!1sen!2sus"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6225.62162272574!2d-9.138568788487317!3d38.72215235690758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd19338512929eed%3A0xea9073249f71d026!2sR.%20Antero%20de%20Quental%2018%2C%201150-087%20Lisboa%2C%20Portugal!5e0!3m2!1sen!2sus!4v1777227052816!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
           width="100%"
           height="400"
           style={{ border: 0 }}

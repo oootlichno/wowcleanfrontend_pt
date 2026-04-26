@@ -39,7 +39,7 @@ const Footer = () => {
             </li>
             <div className="contact-container">
   <div className="contact-item">
-    <Contact phone="+351 (913) 474-676" />
+    <Contact phone="+351 (93) 828-24-28" />
   </div>
   <div className="contact-item">
     <Email email="help@wowcleanpt.com" />
@@ -53,31 +53,41 @@ const Footer = () => {
 
       <div className="footer-bottom">
         <div className="Policy">
+        <p>
+  <a
+    href="https://www.livroreclamacoes.pt/"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{ color: "#fff" }}
+  >
+    Livro de Reclamações Eletrónico
+  </a>
+</p>
           <p>
-            &copy; {currentYear} WOWClean da CPG. Todos os direitos reservados. Clique aqui {" "}
+            &copy; {currentYear} CPG WOW CLEAN LDA. Todos os direitos reservados. Clique aqui {" "}
             <Link to="/privacy-policy" style={{ color: "#fff" }}>
             política de Privacidade
             </Link>{" "}
-            para ler mais.
+            para ler mais. 
           </p>
         </div>
         <div className="footer-social">
           <a
-            href="https://facebook.com"
+            href="https://www.facebook.com/cpgwowclean"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-facebook-f"></i>
           </a>
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/cpgwowclean_pt?igsh=Z29sY2oyZGkxaG1x"
             target="_blank"
             rel="noopener noreferrer"
           >
             <i className="fab fa-instagram"></i>
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/wow-clean-portugal/"
             target="_blank"
             rel="noopener noreferrer"
           >

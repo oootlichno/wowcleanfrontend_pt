@@ -16,7 +16,7 @@ const QuoteForm = () => {
     city: "",
     state: "",
     zip: "",
-    country: "PL",
+    country: "PT",
     wc: 1,
     toilet: 1,
     cleaning_frequency: 1,
@@ -87,7 +87,7 @@ const QuoteForm = () => {
     } catch (error) {
       console.error("Error submitting the quote or sending the email:", error.response || error.message);
       alert(
-        "There was an error submitting the quote or sending the email. Please check the console for more details."
+        "Houve um erro ao submeter o orçamento ou ao enviar o e-mail. Por favor, verifique a consola para mais detalhes."
       );
     }
   };
@@ -230,7 +230,7 @@ const QuoteForm = () => {
       <div className="form-row">
         <div className="form-column">
           <label htmlFor="cleaning_frequency">
-          Número de sessões de limpeza por semana  *
+          Número de sessões de limpeza por mensal  *
           </label>
           <select
             id="cleaning_frequency"
@@ -261,7 +261,7 @@ const QuoteForm = () => {
           />
         </div>
         <div className="form-column">
-          <label htmlFor="toilet">Número de casas de banho  *</label>
+          <label htmlFor="toilet">Quantidade de sanitas  *</label>
           <input
             type="number"
             id="toilet"

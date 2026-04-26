@@ -120,8 +120,8 @@ const PrivacyPolicy = () => {
         <p>
           Email: <a href="mailto:help@wowcleanpt.com">help@wowcleanpt.com</a>
         </p>
-        <p>Número de telefone: +351 (938) 282-428</p>
-        <p>Coimbra, Portugal</p>
+        <p>Número de telefone: +351 (93) 828-24-28</p>
+        <p>Endereço do escritório: Rua Antero de Quental 18 C/V, 1150-043 Lisboa, Portugal</p>
       </div>
     </div>
   );
