@@ -1,85 +1,39 @@
-# Getting Started with Create React App
+WOWClean Portugal Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Frontend application for the WOWClean Portugal website.
+Built with React and deployed to AWS (S3 + CloudFront).
 
-## Available Scripts
+Tech Stack:
+React (Create React App)
+AWS S3 (static hosting)
+AWS CloudFront (CDN)
+GitHub (version control)
 
-In the project directory, you can run:
 
-### `npm start`
+Install dependencies:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+npm install
+Run Locally
+npm start
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+App will run at:
 
-### `npm test`
+http://localhost:3000
+🏗 Build for Production
+npm run build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Creates optimized files in /build.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+aws s3 sync build s3://wowcleanpt-frontend --delete
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This will:
 
-### `npm run deploy`
+Build the project
+Upload to S3
+Remove old files
+Invalidate CloudFront cache
 
-Builds the app for production and deploys it to the AWS S3 bucket used to host the frontend.
-
-This command performs the following steps:
-
-1. Runs `npm run build` to generate an optimized production build in the `build` folder.
-2. Uploads the contents of the `build` folder to the S3 bucket `wowcleanpt-frontend`.
-3. Removes outdated files from the bucket to keep it synchronized with the latest build.
-4. Creates a CloudFront invalidation so the updated files are served immediately.
-
-After the command completes, the latest version of the application will be available through the CloudFront distribution and the `wowcleanpt.com` domain.
-
-Use this command whenever frontend changes need to be deployed to production.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Production URL
+https://wowcleanpt.com
